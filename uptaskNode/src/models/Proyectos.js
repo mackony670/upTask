@@ -12,9 +12,9 @@ const Proyectos = db.define('proyectos',{
 
     },
     nombre:{
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(100),
     },
-    url: DataTypes.STRING
+    url: DataTypes.STRING(100)
 },{
     hooks:{
         beforeCreate(proyecto){
